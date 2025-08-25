@@ -1,0 +1,4 @@
+.DS_Store
+build/
+**/flattened-codebase.xml
+**/task.md

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+set -x
+
+STAGED_FILES=$(git diff --cached --name-only)
+
+./scripts/lint.sh
+
+if [ -n "$STAGED_FILES" ]; then
+    for file in $STAGED_FILES; do
+        if [ -e "$file" ]; then
+            git add "$file"
+        fi
+    done
+fi

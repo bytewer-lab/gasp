@@ -1,0 +1,8 @@
+{
+  "label": "GASP Documentation",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn everything about GASP (Git Auto Setup Project) - from installation to advanced usage."
+  }
+}
